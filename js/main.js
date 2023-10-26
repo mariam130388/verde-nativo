@@ -2,7 +2,7 @@ let cad = `
 
 
 <header>
-<a class="logo" href="index.html"><img src="./img/logo_transparent-final.png" alt="logo"></a>
+<a class="logo" href="index.html"><img src="img/logo_transparent-final.png" alt="logo"></a>
 <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
 <nav class="nav" id="nav">
     <ul class="nav-list">
@@ -12,20 +12,20 @@ let cad = `
         <li><a class="item" href="cursos.html">Cursos</a></li>
         <li><a class="item" href="nosotros.html">Nosotros</a></li>
         <li><a class="item" href="contacto.html">Contacto</a></li>
-        <li><a id="oculto" href="javascript:abrir()"><img class="derecha" src="./img/user_8764070.png" alt="Cuenta"/></a></li>
-        <li><a id="oculto" href="tienda.html"><img class="derecha" src="./img/shopping-cart_8764078.png" alt="Carrito"></a></li>
+        <li><a id="oculto" href="javascript:abrir()"><img class="derecha" src="img/user_8764070.png" alt="Cuenta"/></a></li>
+        <li><a id="oculto" href="tienda.html"><img class="derecha" src="img/shopping-cart_8764078.png" alt="Carrito"></a></li>
     </ul>
     <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
 </nav>
 
 <div class="personal">
-    <a href="javascript:abrir()"><img class="derecha" src="./img/user_8764070.png" alt="Cuenta"/></a>
-    <a href="tienda.html"><img class="derecha" src="./img/shopping-cart_8764078.png" alt="Carrito"/></a>
+    <a href="javascript:abrir()"><img class="derecha" src="img/user_8764070.png" alt="Cuenta"/></a>
+    <a href="tienda.html"><img class="derecha" src="img/shopping-cart_8764078.png" alt="Carrito"/></a>
 </div>
 
 </header>
 <div class="wapp">
-<a href="https://api.whatsapp.com/send?phone=1122334455"><img src="./img/social.png" alt="wapp"></a>
+<a href="https://api.whatsapp.com/send?phone=1122334455"><img src="img/social.png" alt="wapp"></a>
 </div>
 `
 
