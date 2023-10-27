@@ -46,16 +46,41 @@
         <div class="contacto">
           <div class="form1">
             <p>¿Tenés alguna duda? ¿querés inscribirte a algún curso/taller? Comunicate con nosotros</p>
-            <form action="show-data.html" target="_blank">
+            <form onsubmit="return consultar();">
                 <fieldset class="form1">
                     <legend>Información de contacto</legend>
-                        <label for="nombre">Nombre: <input name="nombre" type="text" required></label>
-                        <label for="mail">E-mail: <input name="mail" type="email" required></label>
-                        <label for="tel">Teléfono: <input name="tel" type="number" required></label>
+                        <label for="mail">E-mail: <input id="email" name="mail" type="email"></label>
+                        <span id="validar_email" style="color:red;"></span>
+                        <label for="tel">Teléfono: <input id='telefono' name="tel" type="number"></label>
+                        <span id="validar_telefono" style="color:red;"></span>
                         <label for="mensaje">Mensaje: <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea></label>
+                        <span id="validar_mensaje" style="color:red;"></span>
                 </fieldset>
                 <input type="submit" value="Enviar">
               </form>
+
+              <!-- <form onsubmit="return contactar();">
+                <fieldset class="form1">
+                  <legend>Información de contacto</legend>
+                  <label class="nombre" for='nombre'>Nombre:</label>
+                  <input type='text' name='nombre' id='nombre'  />
+                  <span id="validar_nombre" style="color:red;"></span>
+                  <label for='email' name='email'>E-mail: </label>
+                  <input type='email' name='email' id="email">
+                  <span id="validar_email" style="color:red;"></span>
+                  <label class="telefono" for='telefono'>Telefono:</label>
+                  <input type='text' name='telefono' id='telefono'  />
+                  <span id="validar_telefono" style="color:red;"></span>
+                  <label for="mensaje">Mensaje: </label>
+                  <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea></label>
+                </fieldset>
+                <input type='submit' value='Enviar'></td>
+                </fieldset>
+              </form>
+            </div> -->
+
+
+
           </div>
           <div class="form2">
             <p>Registrate a nuestra pagina para realizar compras en el sitio</p>
@@ -64,10 +89,10 @@
               <form onsubmit="return registrar();">
                 <label for='usuario'>Usuario:</label>
                 <input type='text' name='usuario' id='registro_usuario' value="" />
-                <span id="validar_usuario" style="color:red;"></span><br>
+                <span id="validar_registro_usuario" style="color:red;"></span><br>
                 <label for='clave'>Clave:</label>
                 <input type='password' name='clave' id='registro_clave' value="" />
-                <span id="validar_clave" style="color:red;"></span>
+                <span id="validar_registro_clave" style="color:red;"></span>
                 <br><br>
                 <input type='submit' value='Enviar'></td>
             </fieldset>
